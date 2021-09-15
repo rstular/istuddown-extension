@@ -47,6 +47,21 @@ function updateHealth() {
         })
         .catch(error => {
             console.error(error);
+
+            chrome.action.setIcon({ path: DEFAULT_ICON });
+            chrome.action.setTitle({ title: "Could not fetch healthcheck data" });
+
+            chrome.storage.local.get(["latestData"], (result) => {
+                if (result.latestData == undefined) {
+                    return;
+                }
+                chrome.runtime.sendMessage({
+                    msgType: "render_new_data",
+                    data: result.latestData,
+                    worstStatus: 3
+                });
+            });
+
         })
 }
 

@@ -9,6 +9,7 @@
             "48": "images/default/mdpi.png",
             "72": "images/default/hdpi.png",
             "96": "images/default/xhdpi.png",
+            "128": "images/default/medium.png",
             "144": "images/default/xxhdpi.png",
             "192": "images/default/xxxhdpi.png",
             "512": "images/default/large.png"
@@ -17,12 +18,14 @@
         "default_popup": "status_popup/index.html"
     },
     "description": "A web-browser extension for displaying statuses of TU Delft services.",
+    "homepage_url": "https://istudelftdown.com/",
     "icons": {
         "16": "images/default/xldpi.png",
         "32": "images/default/ldpi.png",
         "48": "images/default/mdpi.png",
         "72": "images/default/hdpi.png",
         "96": "images/default/xhdpi.png",
+        "128": "images/default/medium.png",
         "144": "images/default/xxhdpi.png",
         "192": "images/default/xxxhdpi.png",
         "512": "images/default/large.png"
