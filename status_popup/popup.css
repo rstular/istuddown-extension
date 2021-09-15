@@ -1,0 +1,181 @@
+:root {
+    --danger-bg: #f14668;
+    --danger: white;
+    --info-bg: #3e8ed0;
+    --info: white;
+    --success-bg: #48c78e;
+    --success: white;
+    --warning-bg: #ffe08a;
+    --warning: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.container {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    min-width: 400px;
+    margin: 0;
+}
+
+.status-container {
+    margin-bottom: 1rem;
+}
+
+.elements-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.no-vertical-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.space-left-1 {
+    margin-left: 1rem;
+}
+
+.icon-small {
+    font-size: 18px !important;
+}
+
+.status-inner {
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.align-child-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.status-inner.is-success {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.status-inner.is-warning {
+    background-color: var(--warning-bg);
+    color: var(--warning);
+}
+
+.status-inner.is-danger {
+    background-color: var(--danger-bg);
+    color: var(--danger);
+}
+
+.status-inner.is-info {
+    background-color: var(--info-bg);
+    color: var(--info);
+}
+
+.hero.is-success {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.hero.is-warning {
+    background-color: var(--warning-bg);
+    color: var(--warning);
+}
+
+.hero.is-danger {
+    background-color: var(--danger-bg);
+    color: var(--danger);
+}
+
+.hero.is-info {
+    background-color: var(--info-bg);
+    color: var(--info);
+}
+
+.hero-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+span.ripple {
+    position: absolute;
+    /* The absolute position we mentioned earlier */
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.button-refresh {
+    background-color: transparent;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 400ms ease-in-out;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-refresh:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.01);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
